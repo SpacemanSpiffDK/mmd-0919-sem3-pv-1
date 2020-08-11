@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Spaceman Spiff | video.js</title>
@@ -14,38 +15,75 @@
     <link href="assets/css/frappe.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <script src="assets/js/script.js" defer></script>
+    <!--
+        https://videojs.com/
+        data-set MUST be surrounded by single quotes!
+        - show/hide controls
+		- mute from start
+		- auto play on load => Only if muted!
+		- more?
+     -->
 </head>
+
 <body>
     <main>
         <article class="color-surface padding-l">
-            <video
-            id="my-video"
-            class="video-js"
-            controls
-            preload="auto"
-            width="640"
-            height="264"
-            poster="assets/images/poster.jpg"
-            data-setup="{}"
-            >
-            <source src="assets/video/Big_Buck_Bunny_1080_10s_10MB.mp4" type="video/mp4" />
-            <source src="assets/video/Big_Buck_Bunny_1080_10s_10MB.webm" type="video/webm" />
+            <!-- 
+                The "data-setup" attribute sets your preferences
+                show/hide controls: set <video controls> 
+                "autoplay": true/false
+                "controls": true/false
+                "muted": true/false
+                "preload": "auto" <== Note the quotation marks
+
+                You can use the data-setup attribute to have video.js autodetect the tag and run the setup
+                (disadvantage: the data-setup-attribut is very sensitive to parsing errors)                
+
+                OR 
+
+                Don't use the data-setup attribute and initialise it yourself
+
+             -->
+             <h1>Video 1</h1>
+             <video id="video1" class="video-js responsive-video ratio-16-9" 
+             controls 
+             width="640"
+             height="264" 
+             poster="assets/images/poster.jpg"
+             data-setup='{"controls": false, "autoplay": true, "preload": "auto", "muted": true}'
+             >
+             <source src="assets/video/Big_Buck_Bunny.mp4" type="video/mp4" />
+             <source src="assets/video/Big_Buck_Bunny.webm" type="video/webm" />
+             <p class="vjs-no-js">
+                 To view this video please enable JavaScript, and consider upgrading to a
+                 web browser that
+                 <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video>
+
+            <h1>Video 2</h1>
+            <video id="video2" 
+            class="video-js responsive-video ratio-16-9" 
+                controls 
+                preload="auto"
+                width="640" height="264" 
+                poster="assets/images/poster.jpg">
+            <source src="assets/video/Big_Buck_Bunny.mp4" type="video/mp4" />
+            <source src="assets/video/Big_Buck_Bunny.webm" type="video/webm" />
             <p class="vjs-no-js">
                 To view this video please enable JavaScript, and consider upgrading to a
                 web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank"
-                >supports HTML5 video</a
-                >
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
             </p>
         </video>
-        
-    </article>
-</main>
+
+
+        </article>
+    </main>
 </body>
 <!--
     HTML by Dan Høegh
     UCN MMD 2020
 -->
+
 </html>
-
-

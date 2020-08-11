@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p {
 	--frp-color-primary: #c7ecee;
 	--frp-color-secondary: #95afc0;
 	--frp-color-accent: #f9ca24;
-	--frp-color-surface: #30336b;
+	--frp-color-surface: #696db4;
 	--frp-color-background: #130f40;
 
 	--frp-color-on-primary: #130f40;
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media (min-width: 641px) {
 	:root {
-		--frp-density-spacer: 10px; /* change spacer value to change density in the layout */
+		--frp-density-spacer: 20px; /* change spacer value to change density in the layout */
 		--frp-radius-component-root: 10px; /*change radius value to what fits your design */
 	}	
 }
