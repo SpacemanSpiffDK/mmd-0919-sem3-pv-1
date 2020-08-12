@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* css framework */
 :root {
 	/* density variables */
-	--frp-density-spacer: 2vw; /* change spacer value to change density in the layout */
+	--frp-density-spacer: 1vw; /* change spacer value to change density in the layout */
 	--frp-density-multiplier-m: 2;
 	--frp-density-multiplier-l: 3;
 	--frp-density-multiplier-xl: 6;
@@ -48,11 +48,11 @@ h1, h2, h3, h4, h5, h6, p {
 	--frp-color-secondary: #95afc0;
 	--frp-color-accent: #f9ca24;
 	--frp-color-surface: #696db4;
-	--frp-color-background: #130f40;
+	--frp-color-background: #514b97;
 
 	--frp-color-on-primary: #130f40;
 	--frp-color-on-secondary: #130f40;
-	--frp-color-on-accent: #130f40;
+	--frp-color-on-accent: #635cb1;
 	--frp-color-on-surface: #c7ecee;
 	
 	/* component radius variables */
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media (min-width: 641px) {
 	:root {
-		--frp-density-spacer: 20px; /* change spacer value to change density in the layout */
+		--frp-density-spacer: 10px; /* change spacer value to change density in the layout */
 		--frp-radius-component-root: 10px; /*change radius value to what fits your design */
 	}	
 }
