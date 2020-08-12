@@ -66,7 +66,7 @@ header nav {
 
 header nav > a {
 	display: inline-block;
-	width: 10vw;
+	width: 5vw;
 } 
 
 header nav a img {
@@ -93,8 +93,8 @@ header nav ul li a {
 	color: var(--frp-color-primary);
 	text-decoration: none;
 	font-size: 1.5rem;
-	height: 10vw;
-	line-height: 10vw;
+	height: 5vw;
+	line-height: 5vw;
 	text-align: center;
 } 
 
@@ -102,24 +102,6 @@ header nav ul li a:hover,
 header nav ul li a.active {
 	text-decoration: underline;
 }
-
-/* specific for about page */
-
-.page-about header nav {
-	margin: calc(var(--frp-density-s)) var(--frp-density-xl);
-	display: flex;
-	justify-content: space-between;
-}
-
-.page-about header a {
-	width: 5vw;
-}
-
-.page-about header nav ul li a {
-	height: 5vw;
-	line-height: 5vw;
-	width: 10vw;
-} 
 
 /* generic stuff */
 
