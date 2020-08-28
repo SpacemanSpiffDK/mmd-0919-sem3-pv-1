@@ -105,3 +105,43 @@ header nav ul li a.active {
 
 /* generic stuff */
 
+.responsive-video {
+	width: 100%;
+	height: 0;
+}
+
+.ratio-16-9 {
+	padding-bottom: 56.25%;
+}
+
+/* background video with overlaying text */
+
+.background-video-overlay-wrapper {
+	position: relative;
+}
+
+.background-video-overlay {
+	background-color: rgba(0,0,0,.7);
+	position: absolute;
+	z-index: 2;
+	top: 0;
+}
+
+.background-video-content .position-wrapper {
+	text-align: center;
+	margin-top: 10vw;
+}
+
+.background-video-content h1 {
+	color: var(--frp-color-primary);
+	margin-top: 0;
+	font-size: 7vw;
+}
+
+.background-video-content p {
+	color: var(--frp-color-primary);
+	font-size: 2vw;
+}
+
+/* video.js play button styles */
+
